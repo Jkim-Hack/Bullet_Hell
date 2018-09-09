@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PlayerTag
+  - EnemyTag
+  - EnemyBulletTag
+  - PlayerBulletTag
+  - AsteroidTag
+  - AsteroidSmartTag
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1075743841
+    locked: 0
+  - name: Planets
+    uniqueID: 423750707
+    locked: 0
+  - name: Particles
+    uniqueID: 1952690501
+    locked: 0
+  - name: Bullets
+    uniqueID: 2179405767
+    locked: 0
+  - name: Foreground
+    uniqueID: 2056221983
+    locked: 0

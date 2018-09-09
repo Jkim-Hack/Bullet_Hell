@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6694320caa0568e4fb296afa762666e1, type: 3}
+  m_Name: Spell Database
+  m_EditorClassIdentifier: 
+  spells:
+  - ID: 1
+    Name: Blue Light
+    Icon: {fileID: 21300000, guid: b02e2928b1bdb6a4089602a539dd1434, type: 3}
+    Description: 
+    Range: 1
+    Cooldown: 1
+    CastTime: 1
+    PowerCost: 1
+    Flags: 4
+  - ID: 2
+    Name: Shield Wall
+    Icon: {fileID: 21300000, guid: 1694514d765f3e94f889de2d0898a588, type: 3}
+    Description: 
+    Range: 0
+    Cooldown: 30
+    CastTime: 0
+    PowerCost: 10
+    Flags: 6
+  - ID: 3
+    Name: Fire Ball
+    Icon: {fileID: 21300000, guid: 54bfab039d31ac946b6a306fd9c353e3, type: 3}
+    Description: 
+    Range: 40
+    Cooldown: 8
+    CastTime: 2
+    PowerCost: 1000
+    Flags: 0
