@@ -96,14 +96,10 @@ public class PlayerController : MonoBehaviour {
 
         if (col.tag == "EnemyMissile")
         {
-            float currentHealth = health.getHealth();
-            float healthAfterHit = currentHealth - 20;
-            StartCoroutine(blink());
-            health.setHealth(healthAfterHit);
-            
+            TakeDamage(20);
         }
 
-        if(col.gameObject.GetComponent<PickUp>() != null)
+        if (col.gameObject.GetComponent<PickUp>() != null)
         {
             //OverCharge
             StartCoroutine(overCharge());
@@ -169,5 +165,13 @@ public class PlayerController : MonoBehaviour {
         yield return new WaitForSeconds(5f);
         CancelInvoke("Shoot");
         InvokeRepeating("Shoot", 0f, .3f);
+    }
+
+    public void TakeDamage(float amt)
+    {
+        float currentHealth = health.getHealth();
+        float healthAfterHit = currentHealth - amt;
+        StartCoroutine(blink());
+        health.setHealth(healthAfterHit);
     }
 }

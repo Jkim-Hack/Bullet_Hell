@@ -81,6 +81,9 @@
      <Compile Include="Assets\2DLaserPack\Scripts\LineBasedLaser.cs" />
      <Compile Include="Assets\2DLaserPack\Scripts\RandomPositionMover.cs" />
      <Compile Include="Assets\2DLaserPack\Scripts\SpriteBasedLaser.cs" />
+     <Compile Include="Assets\Laser2D\Scripts\L2DEnemyHealth.cs" />
+     <Compile Include="Assets\Laser2D\Scripts\L2DPlayerController.cs" />
+     <Compile Include="Assets\Laser2D\Scripts\LaserBeam.cs" />
      <Compile Include="Assets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
      <Compile Include="Assets\Scripts\Background Effects\RepeatingBackground.cs" />
      <Compile Include="Assets\Scripts\Background Effects\ScrollingBackground.cs" />
@@ -106,6 +109,7 @@
      <Compile Include="Assets\Scripts\Enemy\Boss2\ArmBehaviour.cs" />
      <Compile Include="Assets\Scripts\Enemy\Boss2\EnemyController2.cs" />
      <Compile Include="Assets\Scripts\Enemy\Boss2\MissileScripts.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Boss2\ParticleController.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyProjectile.cs" />
      <Compile Include="Assets\Scripts\Enemy\SmartMeteor.cs" />
      <Compile Include="Assets\Scripts\Map.cs" />

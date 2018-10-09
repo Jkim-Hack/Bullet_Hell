@@ -25,7 +25,6 @@ public class MissileScripts : EnemyProjectile {
 	void Update () {
         if (firstMove)
         {
-            Debug.Log(positionTo);
             transform.position = Vector2.MoveTowards(transform.position, positionTo, Time.deltaTime * 60);
             if(transform.position == positionTo)
             {
@@ -53,7 +52,7 @@ public class MissileScripts : EnemyProjectile {
             }
             float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 2);
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * 10);
             if(transform.rotation == rotation)
             {
                 Vector2 pos = transform.position;

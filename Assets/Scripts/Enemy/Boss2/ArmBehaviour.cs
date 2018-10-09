@@ -22,7 +22,8 @@ public class ArmBehaviour : MonoBehaviour {
 
     void Start () {
         initialPos = transform.position;
-	}
+        player = GameObject.Find("Player");
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -71,7 +72,7 @@ public class ArmBehaviour : MonoBehaviour {
                 if (transform.position.x < min.x || transform.position.x > max.x || transform.position.y < min.y || transform.position.y > max.y) 
                 {
                     thirdMove = false;
-                    if(repeatAmount > repeated ? true:false)
+                    if(repeatAmount > repeated)
                     {
                         StartCoroutine(thirdMovement());
                         repeated++;
@@ -98,15 +99,10 @@ public class ArmBehaviour : MonoBehaviour {
 	}
 
 
-    void getPlayer()
-    {
-       player =  GameObject.Find("Player");
-    }
 
     public IEnumerator thirdMovement()
     {
         yield return new WaitForSeconds(3f);
-        getPlayer();
         transform.position = new Vector2(140f * direction, player.transform.position.y);
         thirdMove = true;
    }

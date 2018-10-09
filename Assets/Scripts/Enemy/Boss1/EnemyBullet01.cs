@@ -38,7 +38,7 @@ public class EnemyBullet01 : EnemyProjectile
     public void SetDirection(Vector2 _dir)
     {
         direction = _dir.normalized;
-        print(direction);
+    
     }
 
 }

@@ -19,7 +19,6 @@ public class Health : MonoBehaviour
     {
         health = health - amount;
         calculateHealthPercentage();
-        print("Health class health: " + health);
         GUIDelegate.updateHealthUI(this);
     }
 

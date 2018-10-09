@@ -26,7 +26,7 @@ public class HealthGUIController : MonoBehaviour
     private void damageUpdateOnHealthBar(Health healthProperties)
     {
         float health = healthProperties.getHealth();
-        print("Health: " + health);
+        
         //float maxHealth = healthProperties.maxHealth;
 
        // float ratio = health / maxHealth;

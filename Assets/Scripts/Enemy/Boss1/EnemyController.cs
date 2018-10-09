@@ -108,7 +108,6 @@ public class EnemyController : MonoBehaviour
         }
         if (stopped)
         {
-            Debug.Log(originalY);
             transform.position = new Vector2(transform.position.x,
             originalY + ((float)Mathf.Sin(Time.time) * floatStrength));
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(posX, posY), Time.deltaTime * 40);
@@ -152,7 +151,6 @@ public class EnemyController : MonoBehaviour
             _angle += direction1 * RotateSpeed * Time.deltaTime;
             var offset = new Vector2(Mathf.Sin(_angle), Mathf.Cos(_angle)) * Radius;
             angle = Mathf.Atan2(offset.y, offset.x) * Mathf.Rad2Deg;
-            Debug.Log(angle);
             bool first = false;
             if (angle > 50) first = true;
             if(first) transform.rotation = Quaternion.AngleAxis(50, Vector3.forward);
@@ -329,7 +327,7 @@ public class EnemyController : MonoBehaviour
 
     public void OnParticleCollision(GameObject other)
     {
-        print("LUCK");
+        
         /*
         if (other.tag == "EnemyTag")
         {
